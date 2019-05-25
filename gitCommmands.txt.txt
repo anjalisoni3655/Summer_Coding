@@ -1,0 +1,60 @@
+Q1) How to list all the branches (local and remote)?
+$ git show-branch –all
+$ git branch -a
+------------------------------------------------------------------------------------
+Q2) How to delete a branch?
+Deleting a branch
+1.On GitHub, navigate to the main page of the repository.
+2.Above the list of files, click NUMBER branches.
+3.Scroll to the branch that you want to delete, then click .
+-----------------------------------------------------------------------------
+
+Q3) How to create a new branch and simultaneously switching to it?
+To create a new branch and switch to it at the same time, you can run
+ the git checkout command with the -b switch
+-------------------------------------------------------------------------------
+Q4) How to list all the branches (local and remote)?
+ans- same as q1
+-------------------------------------------------------------------------------------------------
+Q5) How to merge a branch into a target branch?
+1.In the Branches popup select the target branch that you want to 
+integrate the changes to and choose Checkout from the popup menu to 
+switch to that branch.
+
+2.Click the Branches popup at the bottom of the JetBrains Rider window, 
+select the branch that you want to merge into the target branch and choose
+ Merge into Current from the submenu.
+----------------------------------------------------------------------------------------------------------
+Q6) What is stash in Git and what is the command to stash changes?
+The "git stash" command can help you to (temporarily but safely) store your 
+uncommitted local changes - and leave you with a clean working copy.
+-------------------------------------------------------------------------------------------------------------
+Q7) How to view all the commits in a compact form? (Where we get only the Commit Name and ID)
+git log command.
+-------------------------------------------------------------------------------------------------------------------
+Q8) How to view differences between two branches?
+diff command in Linux with examples. diff stands for difference. This command is used
+ to display the differences in the files by comparing the files line by line. Unlike its
+ fellow members, cmp and comm, it tells us which lines in one file have is to be changed to
+ make the two files identical.
+-----------------------------------------------------------------------------------------------------------------------------
+Q9) What is SSH and how is cloning with Https different from cloning with SSH?
+The https:// clone URLs are available on all repositories, public and private. These URLs
+ work everywhere--even if you are behind a firewall or proxy. In certain cases, if you'd 
+rather use SSH, you might be able to use SSH over the HTTPS port.
+When you git clone, git fetch, git pull, or git push to a remote repository using HTTPS 
+URLs on the command line, you'll be asked for your GitHub username and password.SSH URLs
+ provide access to a Git repository via SSH, a secure protocol. To use these URLs, you must
+ generate an SSH keypair on your computer and add the public key to your GitHub account. 
+
+When you git clone, git fetch, git pull, or git push to a remote repository using SSH URLs, 
+you'll be prompted for a password and must provide your SSH key passphrase.
+-------------------------------------------------------------------------------------------------
+Q10) Difference between reset hard and reset soft and what are these used for?
+ans-git reset --hard actually change your files to match the commit you reset to. ... 
+When simply dealing with modifications to existing files that are not changing file names,
+ git reset --soft and --mixed are the same! You will only notice a difference if you added
+ new files or renamed files
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
