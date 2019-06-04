@@ -1,0 +1,43 @@
+grep -w "the"      (grep#1)
+
+
+grep -iw "the"      (grep#2)
+
+
+grep -iw "the"      (grep#3)
+
+
+
+grep -iw 'the\|that\|then\|those'             (grep A)
+
+grep '\([0-9]\) *\1'              (grep B)
+
+sed 1-    sed -e 's/the /this /'
+
+
+
+sed 2-      sed 's/thy/your/ig'
+
+
+
+sed 3-   sed -e 's/thy/{&}/ig'
+
+
+
+sed 4-   sed 's/[0-9]* /**** /g'
+
+
+
+sed 5-    sed -E 's/([0-9]{4}) ([0-9]{4}) ([0-9]{4}) ([0-9]{4})/\4 \3 \2 \1 /g'
+
+
+
+
+
+
+
+
+
+
+
+
