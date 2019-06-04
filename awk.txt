@@ -1,0 +1,27 @@
+awk 1-   awk '{if ($4 == "") print "Not all scores are available for",$1;}'
+
+awk-2 --  awk '{
+    if ( $2 < 50 || $3 < 50 || $4 < 50 )
+        print $1, ": Fail"
+    else
+        print $1, ": Pass"
+}'
+
+
+awk 3--       awk '{
+total = ($2 + $3 + $4)/3
+if (total >= 50 && total< 60)
+    print $1,$2,$3,$4, ": C"
+else if (total >= 60 && total < 80)
+    print $1,$2,$3,$4, ": B"
+else if (total >= 80)
+    print $1,$2,$3,$4, ": A" 
+else 
+    print $1,$2,$3,$4, ": FAIL" }'
+
+awk-4---   awk '{
+    if ( NR % 2 == 1 )
+        printf "%s;", $0
+    else
+        printf "%s\n", $0  
+}'
